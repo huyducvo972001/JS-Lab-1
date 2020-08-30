@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 - Lab 1</title>
+    <script src="bai2.js"></script>
+    <style>
+        .container{
+            border: 2px solid red;
+            width:400px;
+            margin: auto;
+            margin-top: 60px;
+        }
+        h2{
+            background-color: rgb(240, 90, 240);
+            text-align: center;
+            margin-top: 0;
+            padding: 7px;
+            color: yellow;
+            
+        }
+        p{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        b{
+            color: rgb(182, 140, 147);
+            
+        }
+        p span{
+            display: inline-block;
+            width: 100px;
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>THÔNG TIN CÁ NHÂN</h2>
+    <p><span>Họ tên :</span><b id="hoten">
+        <script>document.write(hoten);</script>
+    </b></p>
+    <p><span>Mã SV :</span><b id="masv">
+        <script>document.write(masv);</script>
+    </b></p>
+    <p><span>Ngày sinh :</span><b id="ns"></b></p>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("ns").innerHTML= ngaysinh;
+</script>
